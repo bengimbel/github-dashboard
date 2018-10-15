@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import fetchGithubData from '../actions/FetchGithubData';
 import firebase from '../utils/firebase';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col, Button, Alert } from 'reactstrap';
 class Vote extends Component {
     constructor(props){
         super(props)
@@ -86,9 +86,8 @@ class Vote extends Component {
         e.preventDefault()
         if (this.state.list.includes(this.state.email)){
             return (
-               alert("You already voted")
+               alert("You already voted with this email")
             )
-            
         }
         const newItem = this.state.list.concat(this.state.email);
         this.setState({

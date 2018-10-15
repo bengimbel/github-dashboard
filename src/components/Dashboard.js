@@ -81,7 +81,7 @@ class Dashboard extends Component {
                                 <DashboardItemRank itemInfo={this.props.githubData.data} dataType={'issue'} />
                             </Col>
                             <Col>
-                            <h3>GitHub Star Data</h3>
+                                <h3>GitHub Star Data</h3>
                                 <DashboardItemRank itemInfo={this.props.githubData.data} dataType={'star'} />
                             </Col>
                         </Row>

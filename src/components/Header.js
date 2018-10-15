@@ -7,10 +7,10 @@ class Header extends Component {
         return (
             <Nav>
                 <NavItem style={{margin: '20px'}}>
-                    <Link to='/'><h3>Dashboard Page</h3></Link>
+                    <Link to='/'><h2>Dashboard</h2></Link>
                 </NavItem>
                 <NavItem style={{margin: '20px'}}>
-                    <Link to='/vote'><h3>Vote Page</h3></Link>
+                    <Link to='/vote'><h2>Vote</h2></Link>
                 </NavItem>
             </Nav>
         )

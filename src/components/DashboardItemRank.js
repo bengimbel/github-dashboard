@@ -25,7 +25,7 @@ class DashboardItemRank extends Component {
                 return (
                     unSortedData.map(info => {
                         return (
-                            <h3 key={info.forks}>{info.name} {info.forks}</h3>
+                            <h5 key={info.forks}>{info.name} {info.forks}</h5>
                         )
                     })
                 )
@@ -35,7 +35,7 @@ class DashboardItemRank extends Component {
                 return (
                     this.props.sortedForkData.map(info => {
                         return (
-                            <h3 key={info.forks}>{info.name}: {info.forks}</h3>
+                            <h5 key={info.forks}>{info.name}: {info.forks}</h5>
                         )
                     })   
                 )}
@@ -49,7 +49,7 @@ class DashboardItemRank extends Component {
                 return (
                     unSortedData.map(info => {
                         return (
-                            <h3 key={info.open_issues}>{info.name}: {info.open_issues}</h3>
+                            <h5 key={info.open_issues}>{info.name}: {info.open_issues}</h5>
                         )
                     })
                 )
@@ -59,7 +59,7 @@ class DashboardItemRank extends Component {
                 return (
                     this.props.sortedIssueData.map(info => {
                         return (
-                            <h3 key={info.open_issues}>{info.name}: {info.open_issues}</h3>
+                            <h5 key={info.open_issues}>{info.name}: {info.open_issues}</h5>
                         )
                     })   
                 )}
@@ -73,7 +73,7 @@ class DashboardItemRank extends Component {
                 return (
                     unSortedData.map(info => {
                         return (
-                            <h3 key={info.stargazers_count}>{info.name}: {info.stargazers_count}</h3>
+                            <h5 key={info.stargazers_count}>{info.name}: {info.stargazers_count}</h5>
                         )
                     })
                 )
@@ -83,7 +83,7 @@ class DashboardItemRank extends Component {
                 return (
                     this.props.sortedStarData.map(info => {
                         return (
-                            <h3 key={info.stargazers_count}>{info.name}: {info.stargazers_count}</h3>
+                            <h5 key={info.stargazers_count}>{info.name}: {info.stargazers_count}</h5>
                         )
                     })   
                 )}
