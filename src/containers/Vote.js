@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DashboardItem from './DashboardItem';
+import DashboardItem from '../components/DashboardItem';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import fetchGithubData from '../actions/FetchGithubData';

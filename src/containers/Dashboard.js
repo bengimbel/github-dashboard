@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DashboardItem from './DashboardItem';
+import DashboardItem from '../components/DashboardItem';
 import DashboardItemRank from './DashboardItemRank';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';

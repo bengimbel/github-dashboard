@@ -1,9 +1,6 @@
 import { 
-    SORT_FORKS,
-    SORT_ISSUES,
     SORT_STARS
  } from '../utils/constants';
-// import _ from 'lodash';
 
 export default function sortStarData(info) {
     return dispatch => {
