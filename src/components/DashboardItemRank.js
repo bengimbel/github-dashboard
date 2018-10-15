@@ -224,14 +224,6 @@ class DashboardItemRank extends Component {
                  {
                      this.renderStarButton()
                  }
-                    {/* <Button
-                        color="primary"
-                        onClick={() => this.setState({
-                            sortStarTrigger: !this.state.sortStarTrigger
-                        })}
-                    >
-                    Rank Star Data From Lowest To Highest
-                    </Button> */}
                 </div>
             )
         }

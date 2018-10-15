@@ -9,16 +9,6 @@ import sortIssueData from '../actions/SortIssue';
 import sortStarData from '../actions/SortStar';
 import _ from 'lodash';
 import { Container, Row, Col } from 'reactstrap';
-// import { withCookies, Cookies } from 'react-cookie';
-import {
-    FETCH_GITHUB_DATA_REQUEST,
-    FETCH_GITHUB_DATA_SUCCESS,
-    FETCH_GITHUB_DATA_FAIL,
-    facebookUrl,
-    angularUrl,
-    emberUrl,
-    vueUrl
-} from '../utils/constants'
 
 class Dashboard extends Component {
     constructor(props){
