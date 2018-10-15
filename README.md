@@ -1,3 +1,14 @@
+This is a github dashboard where users can look at data for different repositories and vote on the repository that they think is the best choice. This is a single page application that I built with React and Redux, React-Router, and Firebase. 
+
+The first 'Dashboard' page at the top is showing fork, open issue and star information. The bottom is showing the data group together by ork, open issue and star data, with a button to sort the data from lowest to highest. 
+
+On the Second 'Voting' page there is a voting form where users can vote on a framework. The email is stored in LocalStorage, so a user cannot vote more than once with a given email or navigate away and come back to try and vote again. The votes are kept track with a firebase database that I hooked up to this web app. I also am showing repository data below the voting form to help with the decision.
+
+I used React and Redux to make this application. I think storing the github data in application state and then copying it an pulling that data to where I need to show it was the best way for the whole application to have updated data. I used a library called 'lodash' and I also styled this application with 'reactstrap'. Below is the link to the application that I deployed to heroku. You can also clone this repository and 'npm install'.
+
+https://github-dashboard-launchpad.herokuapp.com/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
