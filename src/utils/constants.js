@@ -1,0 +1,10 @@
+export const facebookUrl = 'https://api.github.com/repos/facebook/react';
+export const angularUrl = 'https://api.github.com/repos/angular/angular.js';
+export const emberUrl = 'https://api.github.com/repos/emberjs/ember.js';
+export const vueUrl = 'https://api.github.com/repos/vuejs/vue';
+export const FETCH_GITHUB_DATA_REQUEST = 'FETCH_GITHUB_DATA_REQUEST';
+export const FETCH_GITHUB_DATA_SUCCESS = 'FETCH_GITHUB_DATA_SUCCESS';
+export const FETCH_GITHUB_DATA_FAIL = 'FETCH_GITHUB_DATA_FAIL';
+export const SORT_FORKS = 'SORT_FORKS';
+export const SORT_ISSUES = 'SORT_ISSUES';
+export const SORT_STARS = 'SORT_STARS';
