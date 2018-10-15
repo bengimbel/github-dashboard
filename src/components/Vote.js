@@ -206,21 +206,23 @@ class Vote extends Component {
                     </div>
                 </form>
                 <div className="votes-container">
-                <Container style={{margin: '30px'}}>
-                    <Row>
-                        <Col>
-                            <h5>React Votes: {this.state.react}</h5>
-                        </Col>
-                        <Col> 
-                            <h5>Angular Votes: {this.state.angular}</h5>
-                        </Col>
-                        <Col>
-                            <h5>Ember Votes: {this.state.ember}</h5>
-                        </Col>
-                        <Col>
-                            <h5>Vue Votes: {this.state.vue}</h5>
-                        </Col>
-                    </Row>
+                <Container style={{marginTop: '20px', marginBottom: '20px'}}>
+                    <Alert color="dark">
+                        <Row>
+                            <Col>
+                                <h5>React Votes: {this.state.react}</h5>
+                            </Col>
+                            <Col> 
+                                <h5>Angular Votes: {this.state.angular}</h5>
+                            </Col>
+                            <Col>
+                                <h5>Ember Votes: {this.state.ember}</h5>
+                            </Col>
+                            <Col>
+                                <h5>Vue Votes: {this.state.vue}</h5>
+                            </Col>
+                        </Row>
+                    </Alert>
                 </Container>
                     {
                         this.renderRepositoryDashboardItems()

@@ -33,7 +33,6 @@ class Dashboard extends Component {
                 externalData: data
             })
         })
-        // this.interval = setInterval(this.props.fetchGithubData, 5000)
     }
  
     renderRepositoryDashboardItems() {
@@ -60,18 +59,15 @@ class Dashboard extends Component {
     renderDashboardItems() {
         if(this.props.githubData.data) {
             return (    
-                    <Container style={{marginTop: '50px'}}>
+                    <Container style={{marginTop: '25px'}}>
                         <Row>
                             <Col>
-                                <h3>GitHub Fork Data</h3>
                                 <DashboardItemRank itemInfo={this.props.githubData.data} dataType={'fork'} />
                             </Col>
                             <Col>
-                                <h3>GitHub Open Issue Data</h3>
                                 <DashboardItemRank itemInfo={this.props.githubData.data} dataType={'issue'} />
                             </Col>
                             <Col>
-                                <h3>GitHub Star Data</h3>
                                 <DashboardItemRank itemInfo={this.props.githubData.data} dataType={'star'} />
                             </Col>
                         </Row>
@@ -85,9 +81,6 @@ class Dashboard extends Component {
         }
     }
 
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
 
     render() {
         return (

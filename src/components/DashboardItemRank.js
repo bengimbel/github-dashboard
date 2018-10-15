@@ -25,7 +25,7 @@ class DashboardItemRank extends Component {
                 return (
                     unSortedData.map(info => {
                         return (
-                            <h5 key={info.forks}>{info.name} {info.forks}</h5>
+                            <h5 key={info.forks}>{info.name}: {info.forks}</h5>
                         )
                     })
                 )
@@ -122,25 +122,25 @@ class DashboardItemRank extends Component {
         if(this.state.sortIssueTrigger){
             return(
                 <Button 
-                disabled
-                color="primary"
-                onClick={() => this.setState({
-                    sortIssueTrigger: !this.state.sortIssueTrigger
-            })}
-            >
-            Rank Open Issue Data From Lowest To Highest
-            </Button>
+                    disabled
+                    color="primary"
+                    onClick={() => this.setState({
+                        sortIssueTrigger: !this.state.sortIssueTrigger
+                    })}
+                >
+                Rank Open Issue Data From Lowest To Highest
+                </Button>
             )
         } else {
             return(
-            <Button 
-                color="primary"
-                onClick={() => this.setState({
-                    sortIssueTrigger: !this.state.sortIssueTrigger
-                })}
-            >
-            Rank Open Issue Data From Lowest To Highest
-            </Button>
+                <Button 
+                    color="primary"
+                    onClick={() => this.setState({
+                        sortIssueTrigger: !this.state.sortIssueTrigger
+                    })}
+                >
+                Rank Open Issue Data From Lowest To Highest
+                </Button>
             )
         }
     }
@@ -149,25 +149,25 @@ class DashboardItemRank extends Component {
         if(this.state.sortStarTrigger){
             return(
                 <Button 
-                disabled
-                color="primary"
-                onClick={() => this.setState({
-                    sortStarTrigger: !this.state.sortStarTrigger
-            })}
-            >
-            Rank Star Data From Lowest To Highest
-            </Button>
+                    disabled
+                    color="primary"
+                    onClick={() => this.setState({
+                        sortStarTrigger: !this.state.sortStarTrigger
+                    })}
+                    >
+                    Rank Star Data From Lowest To Highest
+                </Button>
             )
         } else {
             return(
-            <Button 
-                color="primary"
-                onClick={() => this.setState({
-                    sortStarTrigger: !this.state.sortStarTrigger
-                })}
-            >
-            Rank Star Data From Lowest To Highest
-            </Button>
+                <Button 
+                    color="primary"
+                    onClick={() => this.setState({
+                        sortStarTrigger: !this.state.sortStarTrigger
+                    })}
+                >
+                Rank Star Data From Lowest To Highest
+                </Button>
             )
         }
     }
@@ -177,6 +177,11 @@ class DashboardItemRank extends Component {
             return (
                 <div className='dashboardItemRank-container'>
                 <Container>
+                    <Row>
+                        <Col>
+                            <h3>GitHub Fork Data</h3>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>
                         {
@@ -197,6 +202,11 @@ class DashboardItemRank extends Component {
                     <Container>
                         <Row>
                             <Col>
+                                <h3>GitHub Open Issue Data</h3>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
                             {
                                 this.setupIssue()
                             }
@@ -213,6 +223,11 @@ class DashboardItemRank extends Component {
             return (
                 <div className='dashboardItemRank-container'>
                 <Container>
+                    <Row>
+                        <Col>
+                            <h3>GitHub Star Data</h3>
+                        </Col>
+                    </Row>
                     <Row>
                         <Col>
                         {
@@ -249,5 +264,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-// export default DashboardItemRank;
 export default connect(mapStateToProps, mapDispatchToProps)(DashboardItemRank);
